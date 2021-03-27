@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <title>Ivana's Music App Survey</title>
+    </head>
+    <body>
+        <div class="container>"
+            <header> 
+                <h1 id="title">Music app survey</h1>
+                <p id="description">Help us improve by answering this questions</p>
+            </header>
+            <form id="survey">
+                <fieldset class="question">
+                    <label id="name" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                </fieldset>
+                <fieldset class="question">
+                    <label id="email" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"         required/>
+                </fieldset>
+                <fieldset class="question">
+                    <label id="age" for="number">Age</label>
+                    <input type="number" name="age" id="number" min="1" max="120" class="form-control" placeholder="Enter your age" required/>
+                </fieldset>
+                <fieldset class="question">
+                    <legend>How often you are listening to music?</legend>
+                    <select id="downdrop" name="access"  class="form-control" required>
+                        <option disabled selected value>Select what describes best your habits</option>
+                        <option value="full">Most of a day</option>
+                        <option value="part">Every day, but not for a long time</option>
+                        <option value="free">I na car</option>
+                        <option value="un">While I work/study</option>
+                        <option value="self">Sometimes</option>                        
+                    </select>
+                </fieldset>
+                <fieldset class="question">
+                    <legend>What group best describes your music taste?</legend>
+                        <label for="pop" class="genres"><input id="pop" name="genre" value="Pop" type="radio" class="genres-radio" checked/>Pop</label>
+                        <label for="rap"><input id="rap" name="genre" value="Rap, Hip-Hop" type="radio" class="genres-radio">Rap, Hip hop</label>
+                        <label for="rap"><input id="rock" name="genre" value="Rock" type="radio" class="genres-radio">Rock</label>
+                        <label for="indie"><input id="indie" name="genre" value="Indie" type="radio" class="genres-radio">Indie</label>
+                        <label for="heavy"><input id="indie" name="genre" value="Heavy Metal, Punk, Hardcore" type="radio" class="genres-radio" >Heavy Metal, Punk, Hardcore</label>
+                        <label for="jazz"><input id="jazz" name="genre" value="Jazz" type="radio" class="genres-radio">Jazz</label>
+                        <label for="folk"><input id="jazz" name="genre" value="Folk, Country" type="radio" class="genres-radio">Folk, Country</label>
+                        <label for="other"><input id="other" name="genre" value="Other" type="radio" class="genres-radio">Other</label>
+                </fieldset>
+                <fieldset class="question">
+                    <legend>Are you satisfied with out music app?</legend>
+                        <select id="satisfied" name="satisfaction" class="satisfaction-form" required>
+                            <option dissabled selected value id="dissabled">Level of satisfaction</option>
+                            <option>Very satisfied<option> 
+                            <option>Satisfied<option>
+                            <option>Neutral<option>
+                            <option>Unsatisfied<option>
+                            <option>Very unsatisfied<option>
+                          </select>
+                </fieldset>
+                <fieldset class="question">
+                    <legend>How did you hear about this app?</legend>
+                        <label for="search" class="hear-question"><input id="search" name="hear" value="search engine" type="checkbox" class="hear-checkbox" checked/>Search Engine</label>
+                        <label for="adv" class="hear-question"><input id="adv" name="hear" value="advertising" type="checkbox" class="hear-checkbox"/>Advertising</label>
+                        <label for="soc" class="hear-question"><input id="soc" name="hear" value="social media" type="checkbox" class="hear-checkbox"/>Social media</label>
+                        <label for="friend" class="hear-question"><input id="friend" name="hear" value="friend" type="checkbox" class="hear-checkbox">Friend</label>
+                        <label for="other" class="hear-question"><input id="other" name="hear" type="text" placeholder="Other" class="hear-checkbox"></label>
+                </fieldset>
+                <fieldset class="question">
+                    <legend>How likely are you to recommend app to family, friends or colleagues?</legend>
+                        <select id="recommend" name="recommend" class="recommend-form" required>
+                            <option dissabled selected value>Recommending someone</option>
+                            <option>Very likely<option> 
+                            <option>Likely<option>
+                            <option>Not sure<option>
+                            <option>Unlikely<option>
+                        </select>
+                </fieldset>
+                <fieldset class="question">
+                    <legend>Any comments or suggestions?</legend>
+                        <textarea class="input-comment" id="comments" name="comment" placeholder="Enter your suggestion here" maxlength="300"></textarea>
+                </fieldset>
+                <fieldset class="question">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
