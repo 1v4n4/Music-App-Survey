@@ -11,12 +11,8 @@ body {
   width: 45%;
   margin: auto;
   border: 3px outset #1DB954;
-  border-radius: 8px; 
+  border-radius: 8px;
   padding: 20px;
-}
-
-li {
-  margin-top: ;
 }
 
 #title {
@@ -40,13 +36,13 @@ ul {
 }
 .question {
   border: 3px outset #1DB954;
-  border-radius: 8px; 
+  border-radius: 8px;
   padding: 20px;
   margin-top: 20px;
 }
 
 #question1 {
-  width: 450px;  
+  width: 450px;
   margin: auto;
   justify-items: center;
 }
@@ -66,7 +62,6 @@ ul {
 .form-control, .satisfaction-form, .recommend-form, textarea, option {
   background-color: #1DB954;
   border: 1px solid #053115;
-  border-radius: 10%;
   color: black;
   width: 300px;
   height: 25px;
@@ -79,7 +74,7 @@ ul {
 }
 
 button {
-  background-color: #1DB954;  
+  background-color: #1DB954;
   border: 1px solid #053115;
   border-radius: 10%;
   width: 110px;
@@ -88,7 +83,7 @@ button {
   }
 
 #other {
-  background-color: #1DB954; 
+  background-color: #1DB954;
   border: 1px solid #053115;
   width: 300px;
   height: 25px;
