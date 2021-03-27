@@ -65,7 +65,7 @@ ul {
 
 .form-control, .satisfaction-form, .recommend-form, textarea, option {
   background-color: #1DB954;
-  border: 1px solid #053115
+  border: 1px solid #053115;
   border-radius: 10%;
   color: black;
   width: 300px;
