@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <title>Ivana's Music App Survey</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>1v4n4's Music App Survey</title>
     </head>
     <body>
         <div class="container">
@@ -18,18 +19,27 @@
             <form id="survey" method="post">
                 <fieldset class="question" id="question1">
                     <ul id="ul">
-                        <li><label for="name">Name:</label>
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" maxlength="40" required></li>
-                        <li class="top-m"><label  for="email" id="e-lbl">Email:</label>
-                        <input type="email" name="email" id="email" class="form-control small" placeholder="Enter your email"  maxlength="40" minlength="5" required/></li>
-                        <li class="top-m"><label for="number" >Age:</label>
-                        <input type="number" name="age" id="number" min="3" max="130" class="form-control" placeholder="Enter your age" required/></li>
+                        <li class="top-m">
+                            <label for="name">Name:</label>
+                            <br>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" maxlength="40" required>
+                        </li>
+                        <li class="top-m">
+                            <label  for="email">Email:</label>
+                            <br>
+                            <input type="email" name="email" id="email" class="form-control small" placeholder="Enter your email"  maxlength="40" minlength="5" required/>
+                        </li>
+                        <li class="top-m">
+                            <label for="number">Age:</label>
+                            <br>
+                            <input type="number" name="age" id="number" min="3" max="130" class="form-control" placeholder="Enter your age" required/>
+                        </li>
                     </ul>
                 </fieldset>
                 <fieldset class="question">
                     <legend>How often you are listening to music?</legend>
                     <select id="downdrop" name="access"  class="form-control" required>
-                        <option disabled selected value>Select what describes best your habits</option>
+                        <option class="opt" disabled selected value>What describes your habits</option>
                         <option value="full">Most of a day</option>
                         <option value="part">Every day, but not for a long time</option>
                         <option value="free">I na car</option>
@@ -53,12 +63,12 @@
                 <fieldset class="question">
                     <legend>Are you satisfied with out music app?</legend>
                         <select id="satisfied" name="satisfaction" class="satisfaction-form" required>
-                            <option dissabled selected value>Level of satisfaction</option>
-                            <option>Very satisfied</option>
-                            <option>Satisfied</option>
-                            <option>Neutral</option>
-                            <option>Unsatisfied</option>
-                            <option>Very unsatisfied</option>
+                            <option class="opt" dissabled selected value>Level of satisfaction</option>
+                            <option class="opt">Very satisfied</option>
+                            <option class="opt">Satisfied</option>
+                            <option class="opt">Neutral</option>
+                            <option class="opt">Unsatisfied</option>
+                            <option class="opt">Very unsatisfied</option>
                           </select>
                 </fieldset>
                 <fieldset class="question">
@@ -74,7 +84,7 @@
                 <fieldset class="question">
                     <legend>How likely are you to recommend app to family, friends, colleagues?</legend>
                         <select id="recommend" name="recommend" class="recommend-form" required>
-                            <option dissabled selected value>Recommending someone</option>
+                            <option class="opt"dissabled selected value>Recommending someone</option>
                             <option>Very likely</option>
                             <option>Likely<option>
                             <option>Not sure</option>
@@ -85,7 +95,7 @@
                     <legend>Any comments or suggestions?</legend>
                         <textarea class="input-comment" id="comments" name="comment" placeholder="Enter your suggestion here" maxlength="300"></textarea>
                 </fieldset>
-                <fieldset class="question">
+                <fieldset class="question" id="butt">
                     <button type="submit" id="submit" class="submit-button">Submit</button>
                 </fieldset>
             </form>
